@@ -16,12 +16,18 @@ for i in range(1):
             new_balance = Decimal(Decimal(balance) + Decimal(y))
             print("New Balance: ")
             print(new_balance)
-
+        else:
+            print("You lost.")
+            new_balance = Decimal(Decimal(balance) - Decimal(y))
+            print("New Balance: ")
+            print(new_balance)
+            exit()
     else:
         print("You lost.")
         new_balance = Decimal(Decimal(balance) - Decimal(y))
         print("New Balance: ")
         print(new_balance)
+        exit()
         
     if balance <= 0:
             exit()
